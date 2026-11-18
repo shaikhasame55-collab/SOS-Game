@@ -1,13 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-  
-<link rel="manifest" href="./manifest.json"> 
-<meta name="theme-color" content="#7200ff">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SOS Bomb & Block</title>
@@ -27,7 +21,6 @@
 
     <div class="welcome-card">
       <h1>💣 SOS BOMB & BLOCK</h1>
-      <p>Think Smart • Make SOS • Win the Game!</p>
 
       <div class="poster-icon">🎮</div>
 
@@ -39,7 +32,7 @@
         <span>💥</span>
         <span>S</span>
         <span>S</span>
-        <span>O</span>
+        <span>S</span>
         <span>S</span>
         <div class="bottom-line"></div>
       </div>
@@ -198,17 +191,6 @@
   </div>
 
   <script src="script.js"></script>
-  
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./service-worker.js")
-      .then(() => console.log("SOS Game Ready!"))
-      .catch(error => console.log("Service Worker Error:", error));
-  });
-}
-</script>
-
 
 </body>
 </html>
