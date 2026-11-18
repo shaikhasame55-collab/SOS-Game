@@ -1442,3 +1442,104 @@ button:focus-visible {
 #gamePage .game-container > p {
   display: none !important;
 }
+
+/* =================================
+   PAGE 1 - SOS ANIMATION
+================================= */
+
+#welcomePage .game-preview {
+  position: relative;
+  overflow: hidden;
+}
+
+#welcomePage .game-preview::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  top: -5px;
+  background: #00f5ff;
+  box-shadow: 0 0 8px #00f5ff, 0 0 18px #00f5ff;
+  animation: sosScanLine 2.5s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes sosScanLine {
+  0% {
+    top: -5px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 105%;
+    opacity: 0;
+  }
+}
+
+/* BOTTOM LINE ANIMATION */
+#welcomePage .bottom-line {
+  animation: bottomGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes bottomGlow {
+  from {
+    box-shadow: 0 0 5px #00eaff;
+    opacity: 0.5;
+  }
+  to {
+    box-shadow: 0 0 18px #00eaff;
+    opacity: 1;
+  }
+}
+
+/* =================================
+   ATTRACTIVE PLAY BUTTON
+================================= */
+
+#welcomePage #startGame {
+  position: relative;
+  overflow: hidden;
+  width: 85%;
+  max-width: 300px;
+  padding: 16px 20px;
+  margin: 22px auto 5px;
+  border: 2px solid #ffffff55;
+  border-radius: 50px;
+  background: linear-gradient(120deg, #7b2ff7, #00c6ff);
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  box-shadow: 0 0 12px #8b5cf6,
+              0 0 25px #00c6ff66;
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s;
+  animation: playPulse 1.8s ease-in-out infinite;
+}
+
+#welcomePage #startGame:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 18px #8b5cf6,
+              0 0 35px #00c6ff;
+}
+
+#welcomePage #startGame:active {
+  transform: scale(0.96);
+}
+
+@keyframes playPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px #8b5cf6,
+                0 0 20px #00c6ff55;
+  }
+  50% {
+    box-shadow: 0 0 18px #8b5cf6,
+                0 0 32px #00c6ff;
+  }
+}
