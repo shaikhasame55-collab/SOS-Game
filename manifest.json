@@ -1,0 +1,19 @@
+
+{
+  "name": "Neon SOS Game",
+  "short_name": "SOS Game",
+  "description": "Play SOS with friends or challenge the computer!",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#100522",
+  "theme_color": "#7200ff",
+  "icons": [
+    {
+      "src": "./Neon%20SOS%20Game%20Icon%20with%20Crown.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png"
+    }
+  ]
+}
