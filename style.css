@@ -1553,8 +1553,19 @@ button:focus-visible {
   position: relative;
   width: 210px;
   height: 210px;
-  margin-left: auto;
-  margin-right: auto;
+  grid-template-columns: repeat(3, 64px);
+  grid-template-rows: repeat(3, 64px);
+  gap: 9px;
+  margin: 24px auto;
+}
+
+#welcomePage .game-preview .bottom-line {
+  display: none;
+}
+
+#welcomePage .game-preview .bottom-line {
+  display: none;
+}
 }
 
 #welcomePage .game-preview::after {
