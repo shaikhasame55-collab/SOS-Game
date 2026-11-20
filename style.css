@@ -1524,13 +1524,16 @@ button:focus-visible {
 #welcomePage .game-preview::after {
   content: "";
   position: absolute;
-  left: 16.67%;
-  top: 16.67%;
-  width: 66.66%;
+  left: 32px;
+  top: 32px;
+  width: 146px;
   height: 3px;
   background: #00c8ff;
-  box-shadow: 0 0 8px #00c8ff, 0 0 15px #00c8ff;
-  animation: blueSOS 1.5s ease-in-out infinite;
+  box-shadow: 0 0 8px #00c8ff;
+  transform: scaleX(0);
+  transform-origin: left center;
+  animation: blueSOS 2s infinite;
+  z-index: 10;
   pointer-events: none;
 }
 
