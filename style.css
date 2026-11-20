@@ -1575,6 +1575,7 @@ button:focus-visible {
   top: 32px;
   width: 146px;
   height: 3px;
+  transform-origin: left center;
   background: #00c8ff;
   box-shadow: 0 0 8px #00c8ff;
   transform: scaleX(0);
